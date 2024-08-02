@@ -1,3 +1,4 @@
+/*RESET css*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,31 +7,27 @@
     text-decoration: none;
 }
 .container{
-    display: flex;
-    /* Torna o elemento flexível para manipular posicionamento */
-    display: flex; 
-    /* Alinha os itens ao centro vertivalmente*/
-    align-items: flex-end;
-    /* Coloca um espaço entre os itens horizonalmente */
-    justify-content: space-between;
-    /* background-color: tomato; */
-    width: 960px;
-    margin: 0 auto;
+    display: flex;/* Torna o elemento flexível para manipular posicionamento */
+    display: flex; /* Alinha os itens ao centro vertivalmente*/
+    align-items: flex-end;/*alinha verticalmente os itens*/
+    justify-content: space-between;/* Espaçamento entre os items verticalmente */
+    width: 960px; /*largura*/
+    margin: 0 auto; /*centraliza a div distribuindo automáticamente o espaço da margin*/
 }
 body{
-    height: 100vh;
+    height: 100vh; /*Altura com 100% da janela*/
 }
 header{
     background-color: rgb(255, 251, 0);
-    padding-block: 4px 4px;
+    padding-block: 4px 4px; /*espaço interno em cima e embaixo do elemento*/
 }
 header div a img{
-    display: block;
-    width: 80px;    
+    display: block; /*Torna o elemento um bloco ocupando 100% a largura*/
+    width: 80px;   
 }
 header nav ul{
-    display: flex;
-    gap: 10px;
+    display: flex; /* Torna o elemento flexível para manipular posicionamento */
+    gap: 10px; /*Espaçamento entre os intens da flexbox*/
 
 }
 header ul li{
@@ -38,17 +35,17 @@ header ul li{
     border-radius: 6px;
 }
 header li a{
-    display: inline-block;
+    display: inline-block; /*Bloco que contém comportamento inline*/
     padding: 2px;
     background-color: white;
 }
 footer ul{
-    display: flex;
+    display: flex;/* Torna o elemento flexível para manipular posicionamento */
     gap: 25px;
     
 }
 footer .footer{
-    flex-direction: column;
+    flex-direction: column; /*Direção do fluxo dos elementos de um flexbox*/
     align-items: center;
     gap: 15px;
 }
@@ -58,8 +55,6 @@ footer{
     padding-block: 15px;
 }
 footer.footerfixed{
-    /* position: fixed; */
-    bottom: 0;
     width: 100%;
     margin-top: 20px;
 }
